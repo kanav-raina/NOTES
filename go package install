@@ -1,0 +1,13 @@
+go env
+cd ~
+mkdir GoMobile
+export GOPATH=~/GoMobile
+export PATH=$PATH:$GOPATH/bin/
+echo $GOPATH
+echo $PATH
+go get  github.com/tomnomnom/assetfinder
+assetfinder version
+assetfinder
+assetfinder --subs-only jet.com
+
+
