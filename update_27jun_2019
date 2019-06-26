@@ -1,0 +1,6 @@
+go get -u https://github.com/kanav-raina/httprobe
+
+
+go get -u github.com/tomnomnom/meg
+
+meg  -d 1000 -v /robots.txt hosts
