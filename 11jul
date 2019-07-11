@@ -1,0 +1,11 @@
+ 1281  apt-get update
+ 1282  apt install docker
+ 1283  updatedb
+ 1284  curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
+ 1285  echo 'deb [arch=amd64] https://download.docker.com/linux/debian buster stable' > /etc/apt/sources.list.d/docker.list
+ 1286  apt-get update
+ 1287  apt-get remove docker docker-engine docker.io
+ 1288  apt-get install docker-ce
+ 1289  docker run hello-world
+ 1290  docker pull opensecurity/mobile-security-framework-mobsf
+ 1291  docker run -it -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest
