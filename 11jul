@@ -9,3 +9,9 @@
  1289  docker run hello-world
  1290  docker pull opensecurity/mobile-security-framework-mobsf
  1291  docker run -it -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest
+ 
+ 
+ 
+ 
+ 
+ . ./myscript.sh && fun argument                    run a file and call  a function with argument
