@@ -4,3 +4,19 @@ git commit -m "Your message about the commit"
 git remote add origin https://github.com/yourUsername/yourRepository.git
 git push -u origin master
 git push origin master
+
+
+
+
+ 1517  cd Desktop/kira/
+ 1518  git remote -v
+ 1519  git remote rm origin
+ 1520  git remote -v
+ 1521  git init
+ 1522  ls
+ 1523  git add 1.info\ gathering/
+ 1524  git commit -m "upload"
+ 1525  git remote add origin https://github.com/kanav-raina/bug_hunt.git
+ 1526  git push -u master
+ 1527  git push -u origin master
+
