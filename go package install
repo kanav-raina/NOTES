@@ -14,3 +14,10 @@ assetfinder --subs-only jet.com
 follow this https://tecadmin.net/install-go-on-debian/
 
 
+add these line in ~/.bashrc          file
+export GOROOT=/usr/local/go 
+export GOPATH=$HOME/Projects/Proj1 
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+
+
