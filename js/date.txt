@@ -1,0 +1,16 @@
+Date In JAVASCRIPT
+
+The date object provide a sphosticated set of methods for manipulating date and time.
+  It reads client machine date and time so if the client's date or time is incorrect, your script will reflect this fact.
+  Days of week and months of the year are enumerated beginning with zero.
+      0-Sunday   1-Monday
+      0-January  1-February
+  Days of months begin with one.
+  
+  
+  Creating Date Object:
+    Date Objects are created with  the new Date() constructor. Date objects created by programmers are static.they donot contain a tickling clock.
+    Syntax:
+          new Date()
+          new Date(milisecond)
+          new Date(year,month,day,hours,minutes,seconds,milliseconds)
