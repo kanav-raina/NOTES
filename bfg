@@ -1,0 +1,4 @@
+Completely remove your commit from github repo
+
+java -jar bfg-1.13.0.jar --delete-files mini_project
+git push -f
