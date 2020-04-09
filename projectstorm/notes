@@ -1,0 +1,67 @@
+node.addInPort(false)           yeh jo hai node id return krta hai node main
+node.addOutPort(false)
+node.addPort(new DefaultPortModel(false, 'out-1', 'Out'))        proper port pass kro
+node.addListener()
+                                you can add field dynamically using addListener
+
+removePort()
+
+
+
+getNodeFactory()
+getPortFactory()
+registerLinkFactory()
+
+DiagramEngine()
+CreateEngine()
+
+DiagramModel()
+
+const str=JSON.stringify(this.engine.getDiagramModel().serializeDiagram())
+this is used to get the serialized json data
+
+
+Default React Diagram
+        1.label
+        2.link
+        3.node
+        4.port
+
+1.Label
+        DefaultLabelFactory
+        DefaultLabelModel
+        DefaultLabelWidget
+
+2.Link
+        DefaultLinkFactory
+        DefaultLinkModel
+        DefaultLinkPointWidget
+        DefaultLinkSegmentWidget
+        DefaultLinkWidget
+
+3.Node
+        DefaultNodeFactory
+        DefaultNodeModel
+        DefaultNodeWidget
+
+4.Port
+        DefaultPortFactory
+        DefaultPortLabelWidget
+        DefaultPortModel
+
+
+1.Set up the diagram engine  
+2.Set up the diagram model
+3.Create a default node
+4.add the models to the root graph
+5.load model into engine
+6.render the diagram
+
+deletion of a node
+// remove default delete action at engine creation
+const engine = createEngine({
+    registerDefaultDeleteItemsAction: false
+});
+
+// add your own
+engine.getActionEventBus().registerAction(new DeleteItemsAction({keyCodes: [46]}));
