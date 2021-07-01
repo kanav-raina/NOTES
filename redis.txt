@@ -1,0 +1,36 @@
+Redis store data in key value pair
+Redis store everything as string
+Redis works on your main memory(RAM) (for caching) 
+Redis is faster
+
+redis-cli
+  quit
+  set name kanav
+  get name
+  set age 22
+  get age
+  del age
+  exist age
+  keys *   (return all the keys)
+  flushall (delete everythng)
+  clear
+  expire name 10 (after 10 sec name will be null)
+  lpush arr name1
+  lpush arr name2
+  lpush arr name3
+  lrange arr 0 -1  (return full array)
+  
+  sadd hobbies "name"  (set)
+  sadd hobbies "age"
+  smembers
+  
+  hset person name kanav
+  hget person name
+  hgetall person (hash)
+  hdel person age
+  hexist person name
+  
+ //redis on nodejs
+ const redis=require("redis")
+ redisClient=redis.createClient()
+  
